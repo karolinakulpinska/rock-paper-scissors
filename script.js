@@ -1,4 +1,4 @@
-// Create variables for three different options: R, P and S
+// Create a variable for three different options: R, P and S
 var choices = [
     'R', 
     'P', 
@@ -10,7 +10,7 @@ var wins = 0;
 var loses = 0;
 var ties = 0;
 
-
+// The game runs for 10 rounds
 for (var i = 0; i < 10; i++) {
 // Prompt user to choose between R, P and S
     var userChoice = prompt('Please choose between "R", "P", and "S" (use capital letters).');
@@ -18,8 +18,8 @@ for (var i = 0; i < 10; i++) {
     // Create a variable for random computer selection between R, P and S
     var computerChoice = choices[Math.floor(Math.random()*choices.length)];
     
-        // If else statements for different options
-        // Alert user of the computer/opponent choice and of the result: "You won/lost or Tie"
+        // If else statements for different choices
+        // Alert user of the computer/opponent choice and of the game result
         if (userChoice === "R" && computerChoice === "R") {
             alert("Your opponent chose " + computerChoice + ". Tie.");
             ties++;
@@ -47,7 +47,7 @@ for (var i = 0; i < 10; i++) {
         } else if (userChoice === "S" && computerChoice === "R") {
             alert("Your opponent chose " + computerChoice + ". YOU LOST :(");
             loses++;
-        // If different choice alert: "WRONG CHOICE. GAME OVER :("
+        // // If different choice than R, P or S, alert: "WRONG CHOICE. GAME OVER :("
         } else {
             alert('WRONG CHOICE. GAME OVER :(');
         } 

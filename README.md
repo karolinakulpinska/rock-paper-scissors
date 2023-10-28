@@ -13,6 +13,7 @@ In this activity, I've worked with a partner to build a rock-paper-scissors game
 ### Instructions
 
 * I began the process by pseudocoding the game.
+![Screenshot-of-pseudocode](./images/Screenshot%202023-10-28%20162903.png)
 
 * User story:
   * I want to play Rock, Paper, Scissors against an automated opponent.
